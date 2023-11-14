@@ -56,8 +56,6 @@ section{
 	text-transform:capitalize;
 	color: var(--main-color);
 }
-
-
 .btn{
 	display:inline-block;
 	margin-top:1rem;
@@ -87,15 +85,37 @@ header{
 	width:30rem;
 	text-align:center;
 }
-navbar{
-	position:fixed;
+.navbar{
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+  /* background-color: #333; */
+  /* position: fixed; */
+  top: 0;
+  /* width: 100%; */
+  transition: top 0.3s;
+
 	
 }
+
+.navbar h2{
+	font-size: medium;
+}
+.navbar a {
+	float: left;
+	display: flex;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+  }
+
+
 
 header .logo{
 	text-transform:uppercase;
 	color:#fff;
-	font-size:28px;
+	font-size:25px;
 	font-weight:bolder;
 	margin-top:2rem;
 	
@@ -107,15 +127,14 @@ header .logo span{
 	color: var(--main-color);
 }
 header .navbar a{
-	display:block;
+	
 	font-size:2rem;
 	color:#fff;
-	margin:2rem 0;
+	margin:0 0; 
 
 }
 
 header .navbar a:hover{
-	letter-spacing:2rem;
 	color: var(--main-color);
 }
 
@@ -125,6 +144,7 @@ header .navbar a:hover{
   margin: 120px 5px;  
   font-size: 30px; 
   width: 50px;  
+ 
 }  
 .fa-facebook {  
   background: #3B5998;  
@@ -367,6 +387,7 @@ header .navbar a:hover{
 	color:#666;
 	font-size:1.7rem;
 }
+
 .contact .row{
 	display:flex;
 	flex-wrap:wrap;
@@ -395,7 +416,7 @@ header .navbar a:hover{
 	text-transform:none;
 	font-size:1.7rem;
 	padding:1rem 0;
-	margin;1rem 0;
+	margin:1rem 0;
 }
 
 .contact .row form .box:focus,
@@ -417,13 +438,13 @@ header .navbar a:hover{
 }
 
 footer {
-            background-color:black;
+            background-color:rgba(163, 163, 163, 0.315);
             color: #fff;
             text-align: center;
             position:bottom;
             bottom: 0;
             width: 100%;
-			 padding: 20px;
+			padding: 20px;
         }
 
 
@@ -460,11 +481,13 @@ body {
 
 
 
+
 .glow {
   
  color:var(--main-color);
   text-align: 0;
   animation: glow 1s ease-in-out infinite alternate;
+
  
 }
 
@@ -509,7 +532,7 @@ body {
 
 
 /*media queries*/
-@media(max-width:991px){
+@media(max-width:0px){
 	html{
 		font-size:55%;
 	}
@@ -520,14 +543,14 @@ body {
 		display: initial;
 	}
 	header{
-		left:-120%;
+		/*left:120%; */
 	}
 	header.active{
 		left:0%;
 	}
 
 }
-@media(max-width:450px){
+@media(max-width:0px){
 	html{
 		font-size:50%
 	}
@@ -544,3 +567,5 @@ body {
 	color:white;
 	font-size:20px;
 }
+/* internal styling code */
+

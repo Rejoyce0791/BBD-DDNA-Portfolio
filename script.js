@@ -68,3 +68,18 @@ window.onscroll = () =>{
             var locationDiv = document.getElementById("location");
             locationDiv.innerHTML = "Error getting location: " + error.message;
         }
+
+
+        let prevScrollpos = window.pageYOffset;
+
+window.onscroll = function() {
+  let currentScrollPos = window.pageYOffset;
+
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-50px"; // Adjust the value based on your navbar height
+  }
+
+  prevScrollpos = currentScrollPos;
+};
