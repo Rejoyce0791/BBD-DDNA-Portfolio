@@ -1,93 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <title>My Personal Portfolio</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Your Name - Home</title>
 </head>
-
 <body>
- <header> 
- 
- <div class="goback">
-	<a href="./index.html">X</a>
-</div>
- 
 
- 
- <nav class="navbar">
- 
-  <h2 href="#" class="logo"><span>Rejoyce</span>Skhosana</h2>
-  
-  <a href="./welcome.html">Home</a>
-	<a href="./about.html">About</a>
-	<a href="./service.html">Service</a>
-    <a href="./contact.html">Contact</a>
-	</nav>
-	
-  <div class="follow">
-  <a href="https://www.facebook.com/your_facebook_username" class="fa fa-facebook"></a>
-  <a href="https://twitter.com/your_twitter_username" class="fa fa-twitter"></a>
-  <a href="https://www.instagram.com/your_instagram_username/" class="fa fa-instagram"></a>
-  <a href="https://www.linkedin.com/in/your_linkedin_username/" class="fa fa-linkedin"></a>
-  </div>
- 
- 
- 
-</header>
+    
 
-<section class="about" id="about">
-<h1 class="heading">About<span>Me</span></h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html"  class="active">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+    </nav>
 
-<div class="row-1">
- <div class="image">
- <img src="images/image2.jpg" alt="">
- </div>
- 
- <div class="content">
- <h3>My name is Rejoyce Skhosana</h3>
- <p>A passionate web developer with a keen eye for design and a love for creating seamless, user-friendly experiences. I thrive on turning ideas into functional and visually appealing websites.</p>
- <h3>Skills</h3>
-<p>~Frontend Development: HTML, CSS, JavaScript.<br>
-~Database: MongoDB, MySQL.<br>
-~Version Control: Git, GitHub.</p>
-<h3>Education</h3>
-<p>Matric<br>
-Vukuzame Secondary | 2016</p>
-<h3>Let's Connect!</h3>
-<p>I'm always open to new opportunities, collaborations, and interesting projects. Feel free to reach out if you're looking for a dedicated web developer to bring your ideas to fruition. Let's build something amazing together!</p>
-</p>
- </div>
- 
- <div class="box-container">
- 
- <div class="box">
- <p><span> Age:</span>25</p>
- <p><span>Gender:</span> Female</p>
- <p><span>Language:</span> English</p>
- <p><span>Work:</span>Front-end developer</p>
- <p><span> Freelance:</span>Available</p>
- <p><span>Phone:</span> 0822358327</p>
- <p><span>Email:</span> sthembile0791@gmail.com</p>
- <p><span>Country:</span>South Africa</p>
- </div>
- 
- <div class="download">
- <a href="CV.docx" class="btn">Download CV</a>
-<a href="process.php" class="btn">Hire me</a>
-</div>
-</div>
+    <section id="about">
+       <div class="about-content">
+            <div class="about-text">
+                <h1>About<span>me</span></h1>
+                <p>I am a Web Developer
+                    With a strong background in front-end and back-end technologies. I specialize in turning ideas into functional, visually appealing, and intuitive web applications. With a keen eye for detail and a commitment to excellence, I aim to deliver high-quality solutions that exceed client expectations</p>
+                <div class="buttons">
+                    <a href="CV.docx" download class="btn">
+                        Download CV
+                      </a>
+                    <!-- <button onclick="downloadCV()">Download CV</button> -->
+                    <button onclick="hireMe()">Hire Me</button>
+                </div>
+            </div>
+            <div class="about-image">
+                <img src="images/image1.jpg" alt="Your Image" class="resizable-image">
+            </div>
+        </div>
+    </section>
 
-</div>
 
-</section>
+    <footer>
+        &copy; 2023 RejoyceSkhosana | MyProfile
+    </footer>
+	 <script src="script.js"></script>
 
 </body>
-
-</head>
 </html>

@@ -1,93 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <title>My Personal Portfolio</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Your Name - Home</title>
 </head>
-
 <body>
-<header>
 
- <div class="goback">
-	<a href="./index.html">X</a>
-</div>
 
- 
- 
- <nav class="navbar">
- 
- <h2 href="#" class="logo"><span>Rejoyce</span>Skhosana</h2>
- 
-  <a href="./welcome.html">Home</a>
-	<a href="./about.html">About</a>
-	<a href="./service.html">Service</a>
-    <a href="./contact.html">Contact</a>
-	</nav>
-	
- <div class="follow">
-  <a href="https://www.facebook.com/your_facebook_username" class="fa fa-facebook"></a>
-  <a href="https://twitter.com/your_twitter_username" class="fa fa-twitter"></a>
-  <a href="https://www.instagram.com/your_instagram_username/" class="fa fa-instagram"></a>
-  <a href="https://www.linkedin.com/in/your_linkedin_username/" class="fa fa-linkedin"></a>
-  </div>
- 
- 
-</header>
 
-<section  class="contact" id="contact">
-<h1 class="heading">Contact<span>Me</span></h1>
-<div class="icons-container">
- <div class="icons">
-  <i class="fas fa-envelope"></i>
-  <h3>Email</h3>
-  <p>sthembile0791@gmail.com</p>
- </div>
- 
-  <div class="icons">
-  <i class="fas fa-phone"></i>
-  <h3>Cell Number</h3>
-  <p>0822358327</p>
- </div>
- 
- 
-  <div class="icons">
-  <i class="fas fa-address"></i>
-  <h3>Address</h3>
-  <p>Randburg,South Africa</p>
- </div>
- 
-</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html" class="active">Contact</a>
+    </nav>
 
-<div class="row">
+    <section id="contact">
+        <h2><span>CONTACT</span>ME</span></h2>
+  <div class="contact-container">
+   
+            <div class="contact-info">
+                <div class="contact-item">
+                    <img src="icons/email.png" alt="Email Icon">
+                    <p>Email: sthembile0791@gmail.com</p>
+                </div>
+                <div class="contact-item">
+                    <img src="icons/contact.png" alt="Phone Icon">
+                    <p>Phone: +27 82 235 8327</p>
+                </div>
+                <div class="contact-item">
+                    <img src="icons/location.png" alt="Location Icon">
+                    <p>Address: Randburg, South Africa</p>
+                </div>
+            </div>
 
-  <form action="process.php" method="post">
-  <input type="text" placeholder="*name" class="box" required>
-   <input type="email" placeholder="*email" class="box" required>
-    <input type="number" placeholder="*number" class="box" required>
-	
-	<textarea name="message" placeholder="*message" id="" cols="30" rows="10" required></textarea>
-	
-	<input type="submit" class="btn" value="send message">
-	</form>
-	
-	<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d229283.36105954056!2d27.79745575478144!3d-26.113522200577098!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9574b0839fe795%3A0x4443ba51b0acaf0d!2sRandburg!5e0!3m2!1sen!2sza!4v1699218592211!5m2!1sen!2sza" style="border:0;" allowfullscreen="" loading="lazy" ></iframe>
-</div>
+            <div class="contact-form">
+    
+                <form id="messageForm">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
 
-</section>
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" required>
 
-<!--footer section-->
+                    <label for="message">Your Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
     <footer>
-        <p>&copy; 2023 My Professional Profile | All rights reserved!</p>
-        <p>Designed by Rejoyce Skhosana</p>
+        &copy; 2023 RejoyceSkhosana | MyProfile
     </footer>
-
+ <script src="script.js"></script>
 </body>
-
-</head>
 </html>
