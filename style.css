@@ -11,8 +11,6 @@ body {
 }
 
 
-
-
 nav {
     background-color:#b3e0ff;
     color: #05131b;
@@ -49,8 +47,7 @@ section {
 .image-container img {
     max-width: 70%;
     height: auto;
-    border-radius: 30%;
-	
+    border-radius: 30%;	
 }
 .image-container, .welcome-message {
     width: 70%;
