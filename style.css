@@ -203,13 +203,16 @@ span{
     justify-content: space-evenly;
     align-items: center;
     padding-top: 10%;
-}
-.contact, .map-section {
     padding: 20px;
     text-align: center;
+    
+
+   
+   
 }
 
-.contact-container, .map-container {
+
+.contact-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -224,6 +227,10 @@ span{
     width: 50%;
     text-align: center;
     margin: auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .contact-item {
@@ -242,12 +249,12 @@ span{
     
 }
 
-form {
+/*form {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
-}
+}*/
 
 label {
     margin-top: 10px;
@@ -284,11 +291,11 @@ button:hover {
 /*footer*/
 footer {
     background-color: black;
-    color: #fff;
+    color: var(--main-color);
     text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
+    padding: 5px 0;
+    position: bottom;
+    bottom:0;
     width: 100%;
 }
 
@@ -306,14 +313,14 @@ img {
     filter: grayscale(100%);
   }
 
-@-webkit-keyframes glow{
+/*@-webkit-keyframes glow{
   from {
     text-shadow: 0 0 2px #000f1a, 0 0 5px #002e4d, 0 0 5px #008ae6, 0 0 5px  #4db8ff, 0 0 10px  #ccebff, 0 0 5px , 0 0 10px #001f33;
   }
   to {
     text-shadow: 0 0 3px  #000f1a, 0 0 7px #008ae6, 0 0 10px #002e4d, 0 0 10px  #4db8ff, 0 0 10px  #ccebff, 0 0 10px #001f33, 0 0 7px  #005c99;
   }
-}
+}*/
 
 
 /* home section Glow Effect */
@@ -426,13 +433,13 @@ img {
   }
 
   @media screen and (max-width: 600px) {
-    .about-content,.home{
+    .about-content,.home,.contact,.services{
       flex-direction: column; /* Stack items on top of each other */
 
     }
   
     .about-image,
-    .about-text ,.buttons ,.image-container,.welcome-message{
+    .about-text ,.buttons ,.image-container,.welcome-message,.contact-info,.contact-form,.service{
       width: 100%; /* Full width for both sections on smaller screens */
     }
   }
