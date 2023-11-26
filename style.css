@@ -19,6 +19,8 @@ nav {
     position: sticky;
     top: 0;
     z-index: 1000;
+    width: 100%;
+
 }
 
 nav a {
@@ -236,6 +238,7 @@ span{
 
 form {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
 }
@@ -299,10 +302,10 @@ img {
 
 @-webkit-keyframes glow {
   from {
-    text-shadow: 0 0 10px #000f1a, 0 0 20px #002e4d, 0 0 30px #008ae6, 0 0 40px  #4db8ff, 0 0 50px  #ccebff, 0 0 60px , 0 0 70px #001f33;
+    text-shadow: 0 0 2px #000f1a, 0 0 5px #002e4d, 0 0 5px #008ae6, 0 0 5px  #4db8ff, 0 0 10px  #ccebff, 0 0 5px , 0 0 10px #001f33;
   }
   to {
-    text-shadow: 0 0 20px  #000f1a, 0 0 30px #008ae6, 0 0 40px #002e4d, 0 0 50px  #4db8ff, 0 0 60px  #ccebff, 0 0 70px #001f33, 0 0 80px  #005c99;
+    text-shadow: 0 0 3px  #000f1a, 0 0 7px #008ae6, 0 0 10px #002e4d, 0 0 10px  #4db8ff, 0 0 10px  #ccebff, 0 0 10px #001f33, 0 0 7px  #005c99;
   }
 }
 
@@ -315,10 +318,104 @@ img {
 /* Responsive Styles */
 @media only screen and (max-width: 600px) {
     nav a {
-        font-size: 16px;
+        font-size: 10px;
+        font-display: center;
     }
-	.home{
-		flex-direction:column;
-	}
+ /* Media query for screens with a width up to 600 pixels */
+@media screen and (max-width: 600px) {
+    nav {
+      font-size: 14px;
+      padding: 10px;
+    }
+  
+    nav a {
+      margin: 0 5px;
+    }
+  }
+  
+  /* Media query for screens with a width between 601 and 1200 pixels */
+  @media screen and (min-width: 601px) and (max-width: 1200px) {
+    nav {
+      font-size: 16px;
+    }
+  }
+
+  
+  /* Media query for screens with a width greater than 1200 pixels */
+  @media screen and (min-width: 1201px) {
+    nav {
+      font-size: 18px;
+    }
+  }
+
+
 }
-       
+
+/* Responsive styles using media queries */
+
+/* Styles for screens with a width up to 600 pixels */
+@media screen and (max-width: 600px) {
+    .home {
+      font-size: 18px;
+    }
+    .about {
+        font-size: 18px;
+      }
+      .services {
+        font-size: 18px;
+      }
+      .contact {
+        font-size: 18px;
+      }
+  
+   /* .content {
+      font-size: 14px;
+    }*/
+}
+  
+  
+  /* Styles for screens with a width between 601 and 900 pixels */
+  @media screen and (min-width: 601px) and (max-width: 900px) {
+    .home {
+      font-size: 24px;
+    }
+    .contact {
+        font-size: 24px;
+      }
+      .services {
+        font-size: 24px;
+      }
+      .about {
+        font-size: 24px;
+      }
+    
+  
+    /*.content {
+      font-size: 16px;
+    }*/
+}
+  
+  
+  /* Styles for screens with a width greater than 900 pixels */
+  @media screen and (min-width: 901px) {
+    .home {
+      font-size: 30px;
+    }
+    .about{
+        font-size: 30px;
+      }
+  
+      .services {
+        font-size: 30px;
+      }
+  
+      .contact {
+        font-size: 30px;
+      }
+    
+    /*.content {
+      font-size: 18px;
+    }*/
+
+  }
+
