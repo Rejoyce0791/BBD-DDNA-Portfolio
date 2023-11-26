@@ -120,7 +120,8 @@ span{
 }
 
 .buttons {
-    margin-top: 20px;
+    margin-top: 50px;
+    justify-content: space-between;
     
 }
 
@@ -427,10 +428,11 @@ img {
   @media screen and (max-width: 600px) {
     .about-content {
       flex-direction: column; /* Stack items on top of each other */
+
     }
   
     .about-text,
-    .about-image {
+    .about-image ,.buttons{
       width: 100%; /* Full width for both sections on smaller screens */
     }
   }
