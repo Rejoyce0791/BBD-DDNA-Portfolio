@@ -27,7 +27,7 @@ nav a {
     color: #05131b;
     text-decoration: none;
     margin: 0 15px;
-    font-size: 25px;
+    font-size: 18px;
     font-family:Georgia, 'Times New Roman', Times, serif
 }
 
@@ -120,8 +120,8 @@ span{
 }
 
 .buttons {
-    margin-top: 50px;
-    justify-content: space-between;
+    margin-top: 20px;
+    
     
 }
 
@@ -426,13 +426,13 @@ img {
   }
 
   @media screen and (max-width: 600px) {
-    .about-content {
+    .about-content,.home{
       flex-direction: column; /* Stack items on top of each other */
 
     }
   
-    .about-text,
-    .about-image ,.buttons{
+    .about-image,
+    .about-text ,.buttons ,.image-container,.welcome-message{
       width: 100%; /* Full width for both sections on smaller screens */
     }
   }
